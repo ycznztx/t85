@@ -1,6 +1,6 @@
 package com.pro.domain;
 
-public class NetTea {
+public class NetTea extends Tea{
 
 
 }

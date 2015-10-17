@@ -1,10 +1,22 @@
 package com.pro.test;
 
 import com.pro.domain.JavaTea;
-import com.pro.domain.Person;
+import com.pro.domain.NetTea;
+import com.pro.domain.Tea;
 
 public class Test {
 
+	/*public void cc(JavaTea jt){
+		jt.jk();
+	}
+	
+	public void cac(NetTea jt){
+		jt.jk();
+	}*/
+	//多态：根据传入不同的对象，而产生不同的结果
+	public void cac(Tea jt){
+		jt.jk();
+	}
 	/**
 	 * @param args
 	 * 为什么创建复杂类型？也称为自定义类型。
@@ -14,11 +26,17 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 		
-		JavaTea jt=new JavaTea();
-		jt.name="李四";
-		jt.jk();
+		JavaTea jt=new JavaTea("zs");
+//		//jt.name="李四";
+//		jt.jk();
+//		
+		NetTea nt=new NetTea();
+//		nt.jk();
 		
-		
+		//Tea nt=new JavaTea();
+		//nt.jk();
+		Test t=new Test();
+		t.cac(jt);
 		
 
 /*		int i=10;
